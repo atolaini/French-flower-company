@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Source Serif Pro";
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: #5F5F61;
+  background-image: url("/images/background.jpg"); }
+
+.container {
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 3rem;
+  position: relative; }
+
+ul {
+  list-style: none; }
