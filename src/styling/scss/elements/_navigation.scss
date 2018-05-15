@@ -1,0 +1,67 @@
+.navBar {
+    //border: 1px solid red;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    padding: 2.4rem 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.6rem;
+    
+    &__nav {
+        display: flex;
+        font-size: 2.4rem;
+        color: $grey;
+
+        &--item {
+            position: relative;
+        }
+
+        &--item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: $grey;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform cubic-bezier(1,0,0,.99) .5s;
+                        
+
+
+
+        }
+
+        &--item:hover::before {
+            transform: scaleX(1);
+        }
+        
+        &--item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: $grey;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform cubic-bezier(1,0,0,.99) .5s;
+        }
+
+        &--item:hover::after {
+            transform: scaleX(1);
+        }
+
+        &--item:not(:last-child) {
+            margin-right: 3rem;
+        }
+
+        &--link:link,
+        &--link:visited {
+            text-decoration: none;
+            color: $grey;
+        }
+    }
+}

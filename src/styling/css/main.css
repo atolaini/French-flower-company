@@ -49,3 +49,69 @@ ul {
   background-size: cover;
   margin: auto;
   margin-top: 4.4rem; }
+
+.logoLink {
+  text-decoration: none; }
+
+.navBar {
+  border-top: 1px solid #5F5F61;
+  border-bottom: 1px solid #5F5F61;
+  padding: 2.4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3.6rem; }
+  .navBar__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2.4rem;
+    color: #5F5F61; }
+    .navBar__nav--item {
+      position: relative; }
+    .navBar__nav--item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #5F5F61;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+      -webkit-transition: -webkit-transform cubic-bezier(1, 0, 0, 0.99) 0.5s;
+      transition: -webkit-transform cubic-bezier(1, 0, 0, 0.99) 0.5s;
+      transition: transform cubic-bezier(1, 0, 0, 0.99) 0.5s;
+      transition: transform cubic-bezier(1, 0, 0, 0.99) 0.5s, -webkit-transform cubic-bezier(1, 0, 0, 0.99) 0.5s; }
+    .navBar__nav--item:hover::before {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1); }
+    .navBar__nav--item::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #5F5F61;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: right;
+              transform-origin: right;
+      -webkit-transition: -webkit-transform cubic-bezier(1, 0, 0, 0.99) 0.5s;
+      transition: -webkit-transform cubic-bezier(1, 0, 0, 0.99) 0.5s;
+      transition: transform cubic-bezier(1, 0, 0, 0.99) 0.5s;
+      transition: transform cubic-bezier(1, 0, 0, 0.99) 0.5s, -webkit-transform cubic-bezier(1, 0, 0, 0.99) 0.5s; }
+    .navBar__nav--item:hover::after {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1); }
+    .navBar__nav--item:not(:last-child) {
+      margin-right: 3rem; }
+    .navBar__nav--link:link, .navBar__nav--link:visited {
+      text-decoration: none;
+      color: #5F5F61; }
