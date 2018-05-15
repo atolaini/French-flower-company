@@ -15,15 +15,37 @@ body {
   font-family: "Source Serif Pro";
   font-size: 1.7rem;
   line-height: 1.5;
-  color: #5F5F61;
-  background-image: url("/images/background.jpg"); }
+  color: #353535;
+  background-image: url("/images/Background.png"); }
 
 .container {
   width: 100%;
   max-width: 96rem;
   margin: 0 auto;
-  padding: 3rem;
   position: relative; }
 
 ul {
   list-style: none; }
+
+.header__logo--2 {
+  display: block;
+  margin: auto;
+  margin-top: 2.5rem; }
+
+.header__subHeading {
+  color: #5F5F61;
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: normal; }
+
+.logo {
+  color: transparent;
+  background-image: url("/images/logo.png");
+  height: 8.5rem;
+  width: 42.4rem;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: cover;
+  margin: auto;
+  margin-top: 4.4rem; }

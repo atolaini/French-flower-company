@@ -16,16 +16,17 @@ body {
     font-family: $fontPrimary;
     font-size: 1.7rem;
     line-height: 1.5;
-    color: $grey;
-    background-image: url('/images/background.jpg');
+    color: $darkGrey;
+    background-image: url('/images/Background.png');
 }
 
 .container {
     width: 100%;
     max-width: 96rem;
     margin: 0 auto;
-    padding: 3rem;
+    //padding: 3rem;
     position: relative;
+    //border: 2px solid red;
 }
 
 ul {

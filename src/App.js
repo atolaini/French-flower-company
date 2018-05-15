@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import './styling/css/main.css'
-import Layout from './hoc/Layout/Layout';
+import Main from './containers/Main/Main';
 
 class App extends Component {
   render() {
     return (
-      <Layout>
-        Test
-      </Layout>
+      <Main />
     );
   }
 }

@@ -1,0 +1,29 @@
+.header {
+   //background-color: coral;
+   &__logo--2 {
+       display: block;
+       margin: auto;
+       margin-top: 2.5rem;
+   }
+
+   &__subHeading {
+       color: $grey;
+       text-align: center;
+       margin-top: 2.5rem;
+       font-size: 2.4rem;
+       font-weight: normal;
+   }
+}
+
+.logo {
+    //background-color: blue;
+    color: transparent;
+    background-image: url('/images/logo.png');
+    height: 8.5rem;
+    width: 42.4rem;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    margin: auto;
+    margin-top: 4.4rem;
+}
